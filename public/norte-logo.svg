@@ -5,5 +5,5 @@
     <path d="M6 38H38" stroke-width="0.75" opacity="0.55"/>
   </g>
   <text x="58" y="22" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="600" letter-spacing="5">NORTE</text>
-  <text x="59" y="36" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="400" letter-spacing="3.35">ARQUITECTOS</text>
+  <text x="59" y="38" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" letter-spacing="1.55">ARQUITECTOS</text>
 </svg>
