@@ -26,6 +26,7 @@ export function Navigation() {
       setHidden(currentY > lastScrollY && currentY > 400)
       setLastScrollY(currentY)
     }
+    handleScroll()
     window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [lastScrollY])
@@ -34,7 +35,7 @@ export function Navigation() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         hidden && !isOpen ? "-translate-y-full" : "translate-y-0"
-      } ${scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"}`}
+      } ${scrolled || isOpen ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"}`}
     >
       <nav className="flex items-center justify-between px-6 py-5 md:px-12 lg:px-20">
         <Link
