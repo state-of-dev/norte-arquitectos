@@ -49,8 +49,8 @@ export function Navigation() {
             width={264}
             height={44}
             priority
-            className={`h-auto w-[220px] opacity-60 transition-[filter,opacity] duration-500 sm:w-[240px] ${
-              scrolled || isOpen ? "brightness-0" : ""
+            className={`h-auto w-[220px] transition-[filter,opacity] duration-500 sm:w-[240px] ${
+              scrolled || isOpen ? "brightness-0 opacity-60" : "opacity-60"
             }`}
           />
         </Link>
