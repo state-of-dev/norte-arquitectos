@@ -49,7 +49,7 @@ export function Navigation() {
             height={44}
             priority
             className={`h-auto w-[220px] transition-[filter] duration-500 sm:w-[240px] ${
-              scrolled ? "brightness-0" : "brightness-0 invert"
+              scrolled || isOpen ? "brightness-0" : "brightness-0 invert"
             }`}
           />
         </Link>
